@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+        <style>
+            .winner{
+                color: green;
+            }
+            .loser{
+                color: red;
+            }
+        </style>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <div class="container">
+            <div class="columns">
+                <div class="column is-half is-offset-one-quarter">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-2by2"> 
+                                <img src="https://cdn.wallpaper.com/main/styles/responsive_920w_scale/s3/woolseypongtable-20.jpg" alt="">
+
+                            </figure>
+                        </div>
+                        <header class="card-header">
+                          <p class="card-header-title">
+                            Ping Pong Score keeper
+                          </p>
+                          
+                        </header>
+                        <div class="card-content">
+                          <div class="content">
+                            <h1 class="title is-1"><span id="p1s">0</span> to <span id="p2s">0</span></h1>
+                            <p class="subtitle">
+                                Use the buttons below to keep score
+                            </p>
+                            <label for="playto" class="is-large label is-inline">
+                                Playing To
+                            </label>
+                            <div class="select">
+                                <select id="playto">
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                </select>
+                            </div>
+                          </div>
+
+                        </div>
+                        <footer class="card-footer">
+                            <button id="p1b" class="is-large is-primary button card-footer-item">+ 1 Player One</button>
+                            <button id="p2b" class="is-large is-info button card-footer-item">+ 1 Player Two</button>
+                             <button id="reset" class="is-large is-danger button card-footer-item">Reset</button>
+                        </footer>
+                      </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <script src="app.js" async defer></script>
+    </body>
+</html>
